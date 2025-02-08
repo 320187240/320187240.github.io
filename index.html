@@ -3,34 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GitHub Pages 主页</title>
+    <title>GitHub主页</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             text-align: center;
             padding: 50px;
+            background-color: #f4f4f4;
         }
         h1 {
             color: #333;
+            font-size: 32px;
+            margin-bottom: 20px;
         }
         p {
             font-size: 18px;
-            color: #666;
+            color: #555;
+            margin-bottom: 10px;
         }
         .counter {
             margin-top: 20px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #444;
+        }
+        .counter img {
+            vertical-align: middle;
+            margin-left: 10px;
+        }
+        .timestamp {
+            margin-top: 20px;
+            font-size: 16px;
+            color: #777;
         }
     </style>
 </head>
 <body>
 
-    <h1>欢迎访问我的 GitHub Pages 主页</h1>
+    <h1>欢迎访问我的主页 🎉</h1>
 
     <!-- 访问计数器 -->
     <div class="counter">
-        <p>访客数量：</p>
-        <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://320187240.github.io&count_bg=%2379C83D&title_bg=%23555555&icon=github.svg" alt="Visitor Count"/>
+        <span>访客数量：</span>
+        <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://32.github.io&count_bg=%2379C83D&title_bg=%23555555&icon=github.svg" alt="Visitor Count"/>
     </div>
+
+    <!-- 访问时间 -->
+    <div class="timestamp" id="timestamp">
+        当前时间：加载中...
+    </div>
+
+    <script>
+        function updateTime() {
+            let now = new Date();
+            let formattedTime = now.toLocaleString('zh-CN', { hour12: false });
+            document.getElementById("timestamp").innerHTML = "当前时间：" + formattedTime;
+        }
+        updateTime();
+        setInterval(updateTime, 1000);
+    </script>
 
 </body>
 </html>
