@@ -1,26 +1,30 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GitHub主页</title>
+    <title>Java - 全栈开发者</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 50px;
+            font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+            color: #24292e;
             background-color: #f4f4f4;
+            text-align: center;
         }
-        h1 {
-            color: #333;
-            font-size: 32px;
-            margin-bottom: 20px;
+        h1 { color: #0366d6; }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #eaecef;
+            padding-bottom: 0.3em;
         }
-        p {
-            font-size: 18px;
-            color: #555;
-            margin-bottom: 10px;
-        }
+        .skill-category { margin-top: 1.5em; text-align: left; }
+        ul { padding-left: 1.2em; }
+        li { margin: 0.4em 0; }
+        strong { color: #d35400; }
         .counter {
             margin-top: 20px;
             font-size: 20px;
@@ -39,20 +43,61 @@
     </style>
 </head>
 <body>
-
-    <h1>欢迎访问我的主页 🎉</h1>
-
+    <h1>专业技能</h1>
+    
+    <div class="skill-category">
+        <h2>全栈开发能力</h2>
+        <ul>
+            <li><strong>后端：</strong>SpringBoot+MyBatisPlus技术栈，PostgreSQL/MySQL双引擎支持，Elasticsearch全文检索方案设计</li>
+            <li><strong>前端：</strong>Vue2+ElementUI工程化实践，组件库沉淀和性能优化，首屏加载速度优化至1s内</li>
+            <li><strong>移动端：</strong>基于UniApp实现跨端开发，封装通用业务组件库，支撑3个平台同步上线</li>
+        </ul>
+    </div>
+    
+    <div class="skill-category">
+        <h2>基础设施</h2>
+        <ul>
+            <li>精通Nginx集群配置，实现动态负载均衡+连接调优</li>
+            <li>Docker容器化部署方案设计（Compose环境搭建），部署效率提升60%</li>
+            <li>Redis高可用架构实战（主从哨兵+持久化方案）</li>
+        </ul>
+    </div>
+    
+    <div class="skill-category">
+        <h2>分布式架构与高并发</h2>
+        <ul>
+            <li>基于SpringCloud（Nacos/Sentinel/OpenFeign）实现微服务治理，支持300W用户平台</li>
+            <li>RabbitMQ事务消息+死信队列构建可靠通信体系，实现端到端消息可靠性保障</li>
+        </ul>
+    </div>
+    
+    <div class="skill-category">
+        <h2>工程化与架构设计</h2>
+        <ul>
+            <li>策略模式/工厂模式重构核心模块，代码复用率提升40%</li>
+            <li>基于SpringSecurity构建RBAC权限体系，支持OAuth2.0多租户认证</li>
+            <li>API网关统一管控方案（鉴权/限流/日志追踪），接口异常定位效率提升70%</li>
+        </ul>
+    </div>
+    
+    <div class="skill-category">
+        <h2>系统性能优化</h2>
+        <ul>
+            <li>ES集群优化：复杂查询响应时间从3s降至200ms</li>
+            <li>MySQL深度调优：索引优化使SQL性能提升5倍</li>
+            <li>JVM调优：GC策略调优降低STW时间至50ms内</li>
+        </ul>
+    </div>
+    
     <!-- 访问计数器 -->
     <div class="counter">
         <span>访客数量：</span>
         <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://32.github.io&count_bg=%2379C83D&title_bg=%23555555&icon=github.svg" alt="Visitor Count"/>
     </div>
-
+    
     <!-- 访问时间 -->
-    <div class="timestamp" id="timestamp">
-        当前时间：加载中...
-    </div>
-
+    <div class="timestamp" id="timestamp">当前时间：加载中...</div>
+    
     <script>
         function updateTime() {
             let now = new Date();
@@ -62,6 +107,7 @@
         updateTime();
         setInterval(updateTime, 1000);
     </script>
+    
 
 </body>
 </html>
