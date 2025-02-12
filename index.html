@@ -31,6 +31,9 @@
             font-weight: bold;
             color: #444;
         }
+        .development_logs {
+            width: 100%;
+        }
         .counter img {
             vertical-align: middle;
             margin-left: 10px;
@@ -44,7 +47,7 @@
 </head>
 <body>
     <h1>专业技能</h1>
-    
+
     <div class="skill-category">
         <h2>全栈开发能力</h2>
         <ul>
@@ -53,7 +56,7 @@
             <li><strong>移动端：</strong>基于UniApp实现跨端开发，封装通用业务组件库，支撑3个平台同步上线</li>
         </ul>
     </div>
-    
+
     <div class="skill-category">
         <h2>基础设施</h2>
         <ul>
@@ -62,7 +65,7 @@
             <li>Redis高可用架构实战（主从哨兵+持久化方案）</li>
         </ul>
     </div>
-    
+
     <div class="skill-category">
         <h2>分布式架构与高并发</h2>
         <ul>
@@ -70,7 +73,7 @@
             <li>RabbitMQ事务消息+死信队列构建可靠通信体系，实现端到端消息可靠性保障</li>
         </ul>
     </div>
-    
+
     <div class="skill-category">
         <h2>工程化与架构设计</h2>
         <ul>
@@ -79,7 +82,7 @@
             <li>API网关统一管控方案（鉴权/限流/日志追踪），接口异常定位效率提升70%</li>
         </ul>
     </div>
-    
+
     <div class="skill-category">
         <h2>系统性能优化</h2>
         <ul>
@@ -88,16 +91,21 @@
             <li>JVM调优：GC策略调优降低STW时间至50ms内</li>
         </ul>
     </div>
-    
+
+    <div class="skill-category">
+        <h2>开发日志</h2>
+        <img src="./images/history.png" class="development_logs"/>
+    </div>
+
     <!-- 访问计数器 -->
     <div class="counter">
         <span>访客数量：</span>
         <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://320187240.github.io&count_bg=%2379C83D&title_bg=%23555555&icon=github.svg" alt="Visitor Count"/>
     </div>
-    
+
     <!-- 访问时间 -->
     <div class="timestamp" id="timestamp">当前时间：加载中...</div>
-    
+
     <script>
         function updateTime() {
             let now = new Date();
@@ -107,7 +115,7 @@
         updateTime();
         setInterval(updateTime, 1000);
     </script>
-    
+
 
 </body>
 </html>
