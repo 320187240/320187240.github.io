@@ -3,116 +3,158 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Java - 全栈开发者</title>
+    <title>Java - 全栈开发者技能栈</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <style>
         body {
-            font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
             line-height: 1.6;
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 0 20px;
-            color: #24292e;
-            background-color: #f4f4f4;
-            text-align: center;
-        }
-        h1 { color: #0366d6; }
-        h2 {
+            max-width: 850px;
+            margin: 30px auto;
+            padding: 0 25px;
             color: #2c3e50;
-            border-bottom: 2px solid #eaecef;
-            padding-bottom: 0.3em;
+            background-color: #f8f9fa;
+            text-align: left;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            border-radius: 8px;
+            padding-top: 30px;
+            padding-bottom: 30px;
         }
-        .skill-category { margin-top: 1.5em; text-align: left; }
-        ul { padding-left: 1.2em; }
-        li { margin: 0.4em 0; }
-        strong { color: #d35400; }
-        .counter {
-            margin-top: 20px;
-            font-size: 20px;
+
+        h1 {
+            color: #2980b9;
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2.5em;
+            letter-spacing: 1.5px;
+            border-bottom: 3px solid #e9ecef;
+            padding-bottom: 15px;
+        }
+
+        h2 {
+            color: #34495e;
+            border-bottom: 2px solid #e9ecef;
+            padding-bottom: 0.6em;
+            margin-top: 2.5em;
+            font-size: 1.8em;
+            text-align: left;
+        }
+
+        .skill-category {
+            margin-bottom: 2.5em;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 2em;
+            margin-top: 1em;
+        }
+
+        li {
+            margin: 0.8em 0;
+            line-height: 1.8;
+        }
+
+        strong {
+            color: #d35400;
             font-weight: bold;
-            color: #444;
         }
-        .development_logs {
-            width: 100%;
+
+        .analytics-container {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px dashed #ced4da;
+            font-size: 1.1em;
+            color: #555;
         }
-        .counter img {
-            vertical-align: middle;
-            margin-left: 10px;
+
+        .counter, .timestamp {
+            margin: 10px 0;
         }
-        .timestamp {
-            margin-top: 20px;
-            font-size: 16px;
-            color: #777;
+
+        @media (max-width: 768px) {
+            body {
+                margin: 20px auto;
+                padding: 0 15px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
         }
     </style>
 </head>
 <body>
-    <h1>专业技能</h1>
+    <h1>全栈开发者 - 核心技能栈</h1>
 
-    <div class="skill-category">
+    <section class="skill-category">
         <h2>全栈开发能力</h2>
         <ul>
-            <li><strong>后端：</strong>SpringBoot+MyBatisPlus技术栈，PostgreSQL/MySQL双引擎支持，Elasticsearch全文检索方案设计</li>
-            <li><strong>前端：</strong>Vue2+UniApp，支撑多平台同步上线</li>
+            <li><strong>后端基础与持久化：</strong>精通SpringBoot + MyBatisPlus 技术栈，熟练运用 PostgreSQL/MySQL 双引擎，并灵活设计 Elasticsearch 全文检索方案，支撑复杂业务查询。</li>
+            <li><strong>前端与跨平台：</strong>熟练运用 Vue2 框架，借助 UniApp 实现前端项目的多平台（Web、H5、小程序、App）同步上线，提升开发效率与覆盖范围。</li>
         </ul>
-    </div>
+    </section>
 
-    <div class="skill-category">
-        <h2>基础设施</h2>
+    <section class="skill-category">
+        <h2>基础设施与DevOps</h2>
         <ul>
-            <li>精通Nginx集群配置，实现动态负载均衡+连接调优</li>
-            <li>Docker容器化部署方案设计（Compose环境搭建），部署效率提升60%</li>
+            <li><strong>Nginx集群：</strong>深入理解 Nginx 工作原理，精通集群配置，实现高可用的动态负载均衡与连接调优，保障服务稳定运行。</li>
+            <li><strong>Docker容器化：</strong>具备 Docker 容器化部署方案设计与实施能力（特别是 Docker Compose 环境搭建），简化运维流程。</li>
+            <li><strong>云原生：</strong>具备云原生使用能力，了解ELK, ELT等生态。</li>
         </ul>
-    </div>
+    </section>
 
-    <div class="skill-category">
-        <h2>分布式架构与高并发</h2>
+    <section class="skill-category">
+        <h2>分布式架构与高并发处理</h2>
         <ul>
-            <li>基于SpringCloud（Nacos/Sentinel/OpenFeign）实现微服务治理，支持300W用户平台</li>
-            <li>Kafka事务消息+死信队列构建可靠通信体系，实现端到端消息可靠性保障</li>
+            <li><strong>微服务治理：</strong>基于 SpringCloud 全家桶（Nacos 注册配置中心、Sentinel 限流熔断、OpenFeign 服务调用）实现微服务分布式架构治理，承载 300 万用户平台的高并发访问。</li>
+            <li><strong>消息队列：</strong>运用 Kafka 事务消息与死信队列机制，构建健壮可靠的分布式通信体系，确保端到端消息传递的可靠性与最终一致性。</li>
         </ul>
-    </div>
+    </section>
 
-    <div class="skill-category">
+    <section class="skill-category">
         <h2>工程化与架构设计</h2>
         <ul>
-            <li>Map的常见代码优化手段，降低时间复杂度，资源缓存等</li>
-            <li>策略模式/工厂模式重构核心模块，代码复用率大幅提升</li>
-            <li>基于SpringSecurity构建RBAC权限体系，支持OAuth2.0多租户认证</li>
+            <li><strong>代码优化实践：</strong>掌握 Map 等数据结构的常见性能优化手段，有效降低时间复杂度；具备资源缓存、延迟加载等优化策略，提升系统响应速度。</li>
+            <li><strong>设计模式应用：</strong>灵活运用策略模式、工厂模式等设计模式重构核心业务模块，显著提升代码可读性、可维护性与复用率。</li>
+            <li><strong>权限认证：</strong>基于 Spring Security 构建完善的 RBAC (Role-Based Access Control) 权限管理体系，并支持 OAuth2.0 多租户认证方案，确保系统安全。</li>
         </ul>
-    </div>
+    </section>
 
-    <div class="skill-category">
-        <h2>系统性能优化</h2>
+    <section class="skill-category">
+        <h2>系统性能调优</h2>
         <ul>
-            <li>MySQL深度调优：索引优化使SQL性能提升5倍</li>
-            <li>JVM调优：GC策略调优降低STW时间至50ms内</li>
+            <li><strong>MySQL深度优化：</strong>精通 MySQL 性能调优，通过索引优化、SQL 重构等手段，使查询性能平均提升 5 倍以上。</li>
+            <li><strong>JVM内存调优：</strong>具备 JVM 内存模型与垃圾回收机制的深入理解，能通过 GC 策略调优，将 Full GC 的 STW (Stop-The-World) 时间降低至 50ms 以内，保障服务高可用。</li>
         </ul>
-    </div>
+    </section>
 
-<!--     <div class="skill-category">
-        <h2>开发日志</h2>
-        <img src="./images/history.png" class="development_logs"/>
-    </div> -->
+    <footer class="analytics-container">
+        <div class="counter">
+            <span>访客数量：</span>
+            <span id="busuanzi_value_page_pv"></span>
+        </div>
 
-    <!-- 访问计数器 -->
-    <div class="counter">
-        <span>访客数量：</span>
-        <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://320187240.github.io&count_bg=%2379C83D&title_bg=%23555555&icon=github.svg" alt="Visitor Count"/>
-    </div>
+        <div class="timestamp" id="timestamp">当前时间：</div>
+    </footer>
 
-    <!-- 访问时间 -->
-    <div class="timestamp" id="timestamp">当前时间：加载中...</div>
-
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
     <script>
         function updateTime() {
             let now = new Date();
-            let formattedTime = now.toLocaleString('zh-CN', { hour12: false });
+            let options = {
+                year: 'numeric', month: '2-digit', day: '2-digit',
+                hour: '2-digit', minute: '2-digit', second: '2-digit',
+                hour12: false
+            };
+            let formattedTime = new Intl.DateTimeFormat('zh-CN', options).format(now);
             document.getElementById("timestamp").innerHTML = "当前时间：" + formattedTime;
         }
         updateTime();
         setInterval(updateTime, 1000);
     </script>
-
-
 </body>
 </html>
